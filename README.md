@@ -19,6 +19,7 @@ Loading Animation: A spinner animation to simulate loading while fetching data.
 IP Information: Retrieves and displays:
 
 • IP address
+
 • Hostname
 • City
 • Region
