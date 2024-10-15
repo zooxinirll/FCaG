@@ -47,8 +47,9 @@ FCaG delivers critical information including IP address, hostname, geolocation (
 First, download the script using Git:
 
 ```bash
-git clone <repository-link>
-cd <repository-folder>
+git clone https://github.com/zooxinirll/FCaG
+cd FCaG
+chmod +x main.sh
 ```
 
 ### Run the Script
