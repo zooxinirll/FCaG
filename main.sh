@@ -19,7 +19,7 @@ function banner() {
     echo " ██║     ╚██████╗██║  ██║╚██████╔╝";
     echo " ╚═╝      ╚═════╝╚═╝  ╚═╝ ╚═════╝ ";
     echo "                                  ";
-    echo -e "${CYAN}           Author: LocalHost.07${RESET}"
+    echo -e "${CYAN}           Author: LocalHost.07${RE
     echo ""
 }
 
