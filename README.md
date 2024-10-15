@@ -8,6 +8,9 @@ The FCaG is an simple Bash-based tool designed for retrieving detailed informati
 
 FCaG delivers critical information including IP address, hostname, geolocation (city, region, country), organization, ASN (Autonomous System Number), and continent details all in one consolidated report.
 
+![FCaG](https://github.com/user-attachments/assets/f2e41eb5-de92-4a81-8cb5-3ce3fb0986e6)
+
+
 ## Features
 
 - **Custom Banner:** Start the script with a personalized, visually appealing banner.
