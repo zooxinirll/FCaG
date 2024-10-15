@@ -9,7 +9,6 @@ RED="\033[1;31m"
 YELLOW="\033[1;33m"
 RESET="\033[0m"
 
-# Banner function
 function banner() {
     echo -e "${MAGENTA}"
     echo " ███████╗ ██████╗ █████╗  ██████╗ ";
@@ -19,11 +18,11 @@ function banner() {
     echo " ██║     ╚██████╗██║  ██║╚██████╔╝";
     echo " ╚═╝      ╚═════╝╚═╝  ╚═╝ ╚═════╝ ";
     echo "                                  ";
-    echo -e "${CYAN}           Author: LocalHost.07${RE
+    echo -e "${CYAN}           Author: LocalHost.07${RESET}"
     echo ""
 }
 
-# Spinner animation
+
 function spinner() {
     local pid=$!
     local delay=0.1
@@ -39,7 +38,7 @@ function spinner() {
     echo -ne "\b\b\b\b\b\b\b"
 }
 
-# Function to fetch and display IP details
+
 function fetch_ip_details() {
     local ip=$1
     echo -e "${GREEN}[*] Fetching details for IP: $ip...${RESET}"
@@ -56,7 +55,7 @@ function fetch_ip_details() {
         exit 1
     fi
 
-    # Displaying details
+    
     echo -e "${CYAN}------------------- IP Information -------------------${RESET}"
     echo -e "${YELLOW}IP:${RESET} $(echo "$response" | jq -r '.ip')"
     echo -e "${YELLOW}Hostname:${RESET} $(echo "$response" | jq -r '.hostname')"
@@ -68,7 +67,7 @@ function fetch_ip_details() {
     echo -e "${YELLOW}Postal:${RESET} $(echo "$response" | jq -r '.postal')"
     echo -e "${YELLOW}Timezone:${RESET} $(echo "$response" | jq -r '.timezone')"
     
-    # ASN and Continent, handled separately
+    
     asn=$(curl -s "https://api.ipinfo.io/$ip/asn" | jq -r '.asn')
     continent=$(curl -s "https://api.ipgeolocation.io/ipgeo?apiKey=YOUR_API_KEY&ip=$ip" | jq -r '.continent_name')
 
@@ -77,7 +76,7 @@ function fetch_ip_details() {
     echo -e "${CYAN}------------------------------------------------------${RESET}"
 }
 
-# Validate IP address
+
 function validate_ip() {
     local ip=$1
     if [[ ! $ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
@@ -86,7 +85,7 @@ function validate_ip() {
     fi
 }
 
-# Main program
+
 banner
 echo -ne "${MAGENTA}Please enter the IP address > ${RESET}"
 read -r ip
