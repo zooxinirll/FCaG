@@ -4,7 +4,7 @@
 
 ## Overview
 
-The FCaG is an advanced Bash-based tool designed for retrieving detailed information about public IP addresses. This script gathers data from leading services like ipinfo.io and ipgeolocation.io, making it a powerful utility for network administrators, cybersecurity experts, and developers.
+The FCaG is an simple Bash-based tool designed for retrieving detailed information about public IP addresses. This script gathers data from leading services like ipinfo.io and ipgeolocation.io, making it a powerful utility for network administrators, cybersecurity experts, and developers.
 
 FCaG delivers critical information including IP address, hostname, geolocation (city, region, country), organization, ASN (Autonomous System Number), and continent details all in one consolidated report.
 
